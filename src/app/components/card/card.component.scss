@@ -1,0 +1,62 @@
+.container-card {
+  background-color: #eeeeee;
+  width: 320px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 5px;
+  padding: 1rem;
+
+  .status {
+    font-size: .8rem;
+    color: #2FC022;
+    margin-bottom: 1rem;
+  }
+
+  .location {
+    margin-bottom: 1rem;
+    color: #333333;
+  }
+
+  .street {
+    color: #808080;
+    font-size: .9rem;
+    padding: 0rem 7rem 1rem 0rem;
+  }
+
+  .details {
+    height: 2px;
+    width: 100%;
+    background-color: #d1d0d0;
+    margin-bottom: 1rem;
+  }
+
+  .container-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .days {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 1rem 2rem 0rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      .day {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+        color: #333333;
+      }
+    }
+  }
+}
