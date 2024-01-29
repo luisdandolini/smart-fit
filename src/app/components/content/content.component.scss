@@ -1,0 +1,138 @@
+.container-content {
+  padding: 80px 450px;
+
+  h1 {
+    line-height: 3rem;
+    font-family: 'Gotham-Black', sans-serif;
+    font-weight: 800 !important;
+    font-size: 2.5rem;
+    color: #333333;
+  }
+
+  .detail {
+    height: 10px;
+    width: 100px;
+    background-color: #333333;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: #808080;
+  }
+}
+
+.container-filter {
+  border: 4px solid #e0e0e0;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 2rem;
+
+  .filter-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 
+      30px;
+    }
+  }
+
+  .subtitle-filter {
+    font-family: 'Gotham-Black', sans-serif;
+    font-weight: 800 !important;
+    font-size: 1.5rem;
+    color: #808080;
+    margin-top: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: .5rem;
+  }
+
+  .hours-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #e0e0e0;
+    
+    div {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+
+      input {
+        width: 20px;
+        height: 20px;
+      }
+
+      label {
+        color: #808080;
+      }
+    }
+  }
+}
+
+.units-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .units-checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    input {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  span {
+    color: #333333;
+  }
+}
+
+.container-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  .button-first {
+    background-color: #FFB612;
+    border: none;
+    width: 300px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Gotham-Black', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;    
+    }
+  }
+
+  .button-second {
+    background-color: transparent;
+    border: 2px solid #808080;
+    width: 300px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Gotham-Black', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;    
+    }
+  }
+}
