@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
 import { LegendComponent } from './components/legend/legend.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LegendComponent } from './components/legend/legend.component';
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    LegendComponent
+    LegendComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
