@@ -1,0 +1,17 @@
+footer {
+  background-color: #333333;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 140px;
+  }
+
+  p {
+    color: #fff;
+    font-weight: 300;
+  }
+}
