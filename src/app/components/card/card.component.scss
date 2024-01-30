@@ -58,9 +58,10 @@
     .days {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1rem;
       flex-wrap: wrap;
-      margin: 2rem 1rem 2rem 0rem;
+      margin: 1rem 1rem 2rem 0rem;
+      font-size: .9rem;
   
       div {
         display: flex;
