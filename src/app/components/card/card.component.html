@@ -16,55 +16,25 @@
     <div class="details"></div>
   
     <div class="container-images">
-      <img 
-        *ngIf="unit.mask === 'recommend'"
-        src="../../../assets/images/recommended-mask.png" 
-        alt=""
-      >
-      <img 
-        *ngIf="unit.mask === 'required'"
-        src="../../../assets/images/required-mask.png" 
-        alt=""
-      >
-  
-      <img 
-        *ngIf="unit.locker_room === 'partial'"
-        src="../../../assets/images/partial-lockerroom.png" 
-        alt=""
-      >
-      <img 
-        *ngIf="unit.locker_room === 'required'"
-        src="../../../assets/images/required-lockerroom.png" 
-        alt=""
-      >
-      <img 
-        *ngIf="unit.locker_room === 'forbidden'"
-        src="../../../assets/images/forbidden-lockerroom.png" 
-        alt=""
-      >
-  
-      <img 
-        *ngIf="unit.towel === 'recommend'"
-        src="../../../assets/images/recommended-towel.png" 
-        alt=""
-      >
-      <img 
-        *ngIf="unit.towel === 'required'"
-        src="../../../assets/images/required-towel.png" 
-        alt=""
-      >
-  
-      <img 
-        *ngIf="unit.fountain === 'partial'"
-        src="../../../assets/images/partial-fountain.png" 
-        alt=""
-      >
-      <img 
-        *ngIf="unit.fountain === 'forbidden'"
-        src="../../../assets/images/forbidden-fountain.png" 
-        alt=""
-      >
+      <!-- Máscara -->
+      <img *ngIf="unit.mask === 'recommend'" src="../../../assets/images/recommended-mask.png" alt="">
+      <img *ngIf="unit.mask === 'required'" src="../../../assets/images/required-mask.png" alt="">
+    
+      <!-- Armário -->
+      <img *ngIf="unit.locker_room === 'partial'" src="../../../assets/images/partial-lockerroom.png" alt="">
+      <img *ngIf="unit.locker_room === 'required'" src="../../../assets/images/required-lockerroom.png" alt="">
+      <img *ngIf="unit.locker_room === 'forbidden'" src="../../../assets/images/forbidden-lockerroom.png" alt="">
+    
+      <!-- Toalha -->
+      <img *ngIf="unit.towel === 'recommend'" src="../../../assets/images/recommended-towel.png" alt="">
+      <img *ngIf="unit.towel === 'required'" src="../../../assets/images/required-towel.png" alt="">
+    
+      <!-- Fonte -->
+      <img *ngIf="unit.fountain === 'partial'" src="../../../assets/images/partial-fountain.png" alt="">
+      <img *ngIf="unit.fountain === 'forbidden'" src="../../../assets/images/forbidden-fountain.png" alt="">
+    
     </div>
+    
   
     <div class="days">
       <div *ngFor="let day of unit.schedules">
