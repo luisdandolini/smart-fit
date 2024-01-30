@@ -19,7 +19,7 @@
         <div>
           <div class="hours-filter">
             <div>
-              <input type="radio" name="hour" value="morning">
+              <input type="radio" name="hour" value="morning" [(ngModel)]="selectedHour">
               <label for="morning">Manhã</label><br>
             </div>
             <p>06:00 às 12:00</p>
@@ -27,7 +27,7 @@
 
           <div class="hours-filter">
             <div>
-              <input type="radio" name="hour" value="afternoon">
+              <input type="radio" name="hour" value="afternoon" [(ngModel)]="selectedHour">
               <label for="afternoon">Tarde</label><br>
             </div>
             <p>12:01 às 18:00</p>
@@ -35,7 +35,7 @@
 
           <div class="hours-filter">
             <div>
-              <input type="radio" name="hour" value="night">
+              <input type="radio" name="hour" value="night" [(ngModel)]="selectedHour">
               <label for="night">Noite</label><br>
             </div>
             <p>18:01 às 23:00</p>
@@ -43,19 +43,19 @@
 
           <div class="units-filter">
             <div class="units-checkbox">
-              <input type="checkbox" name="" id="">
+              <input type="checkbox" name="hour" [(ngModel)]="showClosedUnits">
               <p>Exibir unidades fechadas</p>
             </div>
 
             <div>
-              <p>Resultados encontrados: <span>0</span></p>
+              <p>Resultados encontrados: <span>{{ filteredUnits.length }}</span></p>
             </div>
           </div>
         </div>
 
         <div class="container-buttons">
-          <button class="button-first">ENCONTRAR UNIDADE</button>
-          <button class="button-second">LIMPAR</button>
+          <button class="button-first" (click)="findUnits()">ENCONTRAR UNIDADE</button>
+          <button class="button-second" (click)="clearFilter()">LIMPAR</button>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
     <app-legend></app-legend>
 
     <div class="container-card">
-      <app-card></app-card>
+      <app-card [units]="filteredUnits"></app-card>
     </div>
   </section>
 </main>
